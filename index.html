@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Página</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <header id="cabeçario">
+         <h2 id ="titulo">Arton</h2>
+         <div id="quadradoBt">
+            <ul id="botoes">
+               <li > <a href="#"> Home </a> </li>    
+               <li id="creditos">  <a href="#" > Sobre </a> </li>
+               <li id="creditos2">  <a href="#"> Contato </a> </li>
+            </ul>
+            <button id="comprar">Comprar</button>
+         </div>
+      </header>
+      <div id="myModal" class="modal">
+        
+         <div class="modal-content">
+            <h2 id="disciplina">Disciplina: Desenvolvimento de software para web</h2>
+            <span class="close">&times;</span>
+            <div id="autores">
+               <div class="dadosDev" >
+
+                  <img class="imgDev" src="./wesley.jpeg" alt="">
+                  
+                  <h3 >Wesley Jonatha</h3>
+                  <div id="butContato" > <a href="tel:88997452121">Telefone</a></div> 
+                  <div id="butContato">   <a href="mailto:xsousamaiax@hotmail.com">Mandar email</a></div> 
+                  <p>UFC, Campus Russas</p>
+               
+               </div>
+               <div class="dadosDev">
+                  <img  class="imgDev" src="./vv.png" alt="">
+                  <h3 >Ewerthon Araújo</h3>
+                  <div id="butContato" > <a href="tel:88997452121">Telefone</a></div> 
+                  <div id="butContato">   <a href="mailto:xsousamaiax@hotmail.com">Mandar email</a></div> 
+                  <p>UFC, Campus Russas</p>
+               </div>
+               <div class="dadosDev">
+                  <img  class="imgDev" src="./xx.jpeg" alt="">
+                  <h3 >Igor Nardenio</h3>
+                  <div id="butContato"> <a href="tel:88997452121">Telefone</a></div> 
+                  <div id="butContato">   <a href="mailto:xsousamaiax@hotmail.com">Mandar email</a></div> 
+                  <p>UFC, Campus Russas</p>
+               </div>
+               
+            </div> 
+
+            <div id="entrarEmContado">
+
+                <h1 id="tituloContato" >Entre em contato:</h1>
+
+                 <div id="formularioContato">   
+                 <label for="nome">Seu nome: </label>
+                 <input id="nomeContato" type="text">
+                   <br>
+                 <label for="nome">Assunto: </label>
+                 <input id="assuntoContato" type="text">
+                   <br>
+                 <label for="nome">Mensagem: </label>
+                 <input id="mensagemContato" type="text">
+                 <br>
+                 <button onclick="enviarMensagem()" id="enviarContato" >Enviar</button>
+                </div>
+              
+            </div>
+         </div>
+        
+      </div>
+      <hr id="linha">
+      <section id="inicio">
+         <div id="divEsq">
+            <h3 id="tCima">O futuro da arte</h3>
+            <div id="textoJunto">
+               <h1 id="t">O mundo é fruto da nossa imaginação,</h1>
+               <h1 id="tMaior">nós somos Deuses ou sua criação?</h1>
+            </div>
+            <p id="artista">Artista: Baco Exu do Blues <br>
+               Música: Esú
+            </p>
+            <div id="bots">
+               <button  id="bYoutube"> <a href="https://www.youtube.com/watch?v=opgimBI2Rqk">Escute no Youtube</a> </button>
+               <button id="bDeezer">Escute no Deezer</button>
+            </div>
+         </div>
+         <div id="divDir">
+            <div id="textosDir">
+               <p id="tImg">Imagem: Albúm Esú</p>
+               <p id="tImg2">Artista: Baco Exu do Blues</p>
+            </div>
+         </div>
+      </section>
+      <section id="sessao1">
+         <div id="cimaMural">
+            <h3 id="mural">Mural de mensagens</h3>
+            <button id="botaoM"><a href="#posts" id="verMensagens">Ver mais no mural</a></button>
+         </div>
+         <hr id="linha">
+         <div id="mensagens">
+            <div>   
+               <label for="nome">Seu nome: </label>
+               <input id="nomeMural" type="text">
+            </div>
+            <div>  
+               <label for="mensagem">Sua mensagem: </label>
+               <input  type="text" id="formM">
+            </div>
+            <button onclick="adicionarNoMural()" id="butom">Enviar</button>
+         </div>
+         <div id="posts" >
+            <div class="mural" id="4591751">
+               <h1>Mensageiro</h1>
+               <p id="textoMural">Lorem ipsum dolor sit amet consectetur
+               <p>
+                  <button onclick="deletarPost(4591751)" id="butExcluir">Excluir</button>
+               <hr id="linha">
+            </div>
+         </div>
+      </section>
+      <div id="rodape">
+         <button id="creditos3" class="creditos" >Créditos</button>
+      </div>
+      <script src="./modal.js"></script>
+      <script src="./mural.js"></script>
+      <script src="./contato.js"></script>
+   </body>
+</html>

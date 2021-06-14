@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #06142d;
+  color: beige;
+}
+
+#cabeçario {
+  width: 100%;
+  height: 90px;
+  color: #aeadd8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#titulo {
+  margin-left: 50px;
+}
+
+#quadradoBt {
+  width: 400px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+#botoes {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+#comprar {
+  margin-left: 15px;
+  padding: 15px;
+  background-color: #735bdc;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#linha {
+  border: none;
+  height: 2px;
+  background-color: whitesmoke;
+  opacity: 0.2;
+}
+
+#inicio {
+  color: #d5d6e2;
+  max-width: 830px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  background-color: #0a1d44;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+#divEsq {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 70px;
+  margin-top: 60px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  max-width: 35%;
+}
+
+#divDir {
+  margin-top: 50px;
+  margin-right: -50px;
+  width: 450px;
+  height: 400px;
+  background-image: url("./baco.png");
+  background-size: cover;
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#textosDir {
+  display: flex;
+  justify-content: space-around;
+}
+
+#t {
+  font-size: 30px;
+}
+
+#tMaior {
+  font-size: 30px;
+  background: linear-gradient(to left, #735bdc, #1fbda2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+#artista {
+  font-size: 20px;
+}
+
+#bYoutube {
+  background-color: #735bdc;
+  color: whitesmoke;
+  border: 3px;
+  border: groove;
+  border-color: #735bdc;
+  border-radius: 40px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#bYoutube:hover {
+  border-color: white;
+}
+
+#bots {
+  display: flex;
+  justify-content: space-between;
+}
+
+#bDeezer {
+  background: none;
+  border: 5px;
+  border: groove;
+  border-color: #735bdc;
+  border-radius: 40px;
+  color: whitesmoke;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#bDeezer:hover {
+  border-color: white;
+}
+
+#textoJunto {
+  display: inline-block;
+}
+
+#tImg2 {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+ul li:hover {
+  background: gray;
+}
+
+#sessao1 {
+  margin: 50px auto;
+  max-width: 830px;
+}
+
+#cimaMural {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#botaoM{
+  background: none;
+  border: 20px;
+}
+
+#verMensagens {
+  color: #735bdc;
+  font-size: 17px;
+   
+}
+
+#mensagens {
+  margin-top: 50px;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: #0a1d44;
+  align-items: center;
+}
+
+#formM {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 350px;
+  max-height: 20px;
+}
+
+#butom {
+  background: #3f3080;
+  border: 0;
+
+  color: whitesmoke;
+  height: 30px;
+}
+
+#butom:hover {
+  background-color: #735bdc;
+}
+
+#posts {
+  background-color: #0a1d44;
+  margin: 10px auto;
+  max-width: 830px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mural {
+  margin: 10px;
+  text-align: center;
+  height: auto;
+  width: 255px;
+}
+
+#butExcluir {
+  margin-top: 10px;
+  width: 95%;
+  background: #3f3080;
+  border: 0;
+  color: whitesmoke;
+  border-radius: 10px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#textoMural {
+  margin-top: 7px;
+}
+
+#rodape {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to top, #06142d, #220d7e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: none;
+  position: sticky;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background: linear-gradient(to left, #5b47b8, #130457);
+  margin: auto;
+  padding: 20px;
+  width: 700px;
+  color: white;
+
+}
+
+
+#disciplina{
+  margin-left: 65px;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.creditos {
+  background: #3f3080;
+  border: 0;
+  color: whitesmoke;
+  border-radius: 10px;
+  height: 30px;
+}
+
+#autores {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.dadosDev {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 10px;
+  background: linear-gradient(to left, #5b47b8, #130457);
+}
+
+.imgDev {
+  width: auto;
+  height: 70px;
+  border-radius: 50%;
+}
+
+#contato {
+  display: flex;
+  justify-content: space-around;
+}
+
+#butContato {
+  background-color: #1fbda2;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#entrarEmContado {
+  margin-top: 15px;
+
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#formularioContato {
+  display: flex;
+  flex-direction: column;
+}
+
+#tituloContato {
+  margin: auto;
+}
+
+#enviarContato {
+  background-color: #1fbda2;
+  height: 30px;
+  color: #fff;
+  border: 0;
+}
